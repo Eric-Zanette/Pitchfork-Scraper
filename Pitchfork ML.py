@@ -64,7 +64,7 @@ training_padded = pad_sequences(training_sequences, maxlen=max_length, truncatin
 testing_sequences = tokenizer.texts_to_sequences(testing_sentences)
 testing_padded = pad_sequences(testing_sequences, maxlen=max_length, truncating=trunc_type)
 
-#Convolution parameters - tokenens are influenced by 20 bearby tokens to create context
+#Convolution parameters - tokens are influenced by 20 bearby tokens to create context
 batch_size = 1
 timesteps = 20
 
